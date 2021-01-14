@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-div
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-container
+{
+    width: 30rem;
+    min-height: 50rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#track-name
+{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+#artist
+{
+    color: #cccaca;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin: 1rem 0 2rem 0;
+    font-weight: 300;
+}
+
+#img-container
+{
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    margin: auto;
+}
+
+#image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1.2rem 2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.music-controls
+{
+    width: 22rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#backward , #forward
+{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main-button
+{
+    height: 5.8rem;
+    width: 5.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fas
+{
+    font-size: 3rem;
+    color: #000000bb;
+}
+
+.fa-play
+{
+    font-size: 3.5rem;
+    color: #000000d0;
+}
+
+#backward:hover, #forward:hover, #main-button:hover
+{
+    background-color: #000000c2;
+}
+
+#backward:hover .fas , #forward:hover .fas, #main-button:hover .fas
+{
+    color: #f6f6f6dc;
+}
+
+#footer
+{
+    color: #060606;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 0 0;
+    font-weight: bold;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.animated
+{
+    animation: rotatePlayer 5s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from 
+    {
+        transform: rotate(0deg);
+    }
+    to 
+    {
+        transform: rotate(360deg);
+    }
+}
